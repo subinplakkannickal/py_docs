@@ -9,8 +9,8 @@ Welcome to Python Tutorials!
 Topics
 ==================
 .. toctree::
-   :maxdepth: 2
 
    data_types
    data_structures/index
-   object_oriented_programming
+   object_oriented_programming/index
+   design_patterns/index

@@ -9,6 +9,7 @@ Built-in data structures
    list
    tuple
    dictionary
+   set
 
 User defined data Structures
 --------------------------------------------

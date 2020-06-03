@@ -87,12 +87,14 @@
 <li class="toctree-l3 current"><a class="current reference internal" href="#">List</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tuple.html">Tuple</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dictionary.html">Dictionary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="set.html">Set</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#user-defined-data-structures">User defined data Structures</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../object_oriented_programming.html">Object Oriented Programming</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../object_oriented_programming/index.html">Object Oriented Programming</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../design_patterns/index.html">Design Patterns</a></li>
 </ul>
 
             
@@ -177,10 +179,109 @@
 </div></blockquote>
 <p><strong>Add elements to list:</strong></p>
 <blockquote>
+<div><ul>
+<li><p><cite>append(x)</cite></p>
+<blockquote>
 <div><ul class="simple">
-<li><p><cite>append(x)</cite></p></li>
-<li><p><cite>extend(b_list)</cite></p></li>
-<li><p><cite>insert(i, x)</cite></p></li>
+<li><p><cite>append</cite> will add an object to the end of the list.</p></li>
+<li><p><cite>a_list.append(element)</cite>, The element can be any python object like <cite>int</cite>, <cite>str</cite>, <cite>float</cite>, <cite>list</cite>, <cite>tuple</cite>, <cite>dict</cite> or any other ojects.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><cite>extend(b_list)</cite></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Add elements to the end of list.</p></li>
+<li><p>a_list.extend(object), object can be any type of sequence.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><cite>insert(i, x)</cite></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adding an element to the given index</p></li>
+<li><p><cite>a_list.insert(i, object)</cite>, <cite>i</cite> should be an integer and object can be any python object.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<p><strong>Remove an element:</strong></p>
+<blockquote>
+<div><ul>
+<li><p><cite>remove(obj)</cite></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Remove the object from the list.</p></li>
+<li><p>a_list.remove(object), object should be present in <cite>a_list</cite></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><cite>pop(*i)</cite></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Remove the element at the given index if index passes else the last element and return the popped element.</p></li>
+<li><p><cite>a_list.pop(i)</cite>, Pop the element at <cite>i</cite> and return. I should be an integer and &lt; <cite>len(a_list)</cite></p></li>
+<li><p><cite>a_list.pop()</cite>, pop the last element and return.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><cite>del</cite></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Delete the a_list object.</p></li>
+<li><p><cite>del a_list</cite></p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<p><strong>Access the elements of list:</strong></p>
+<blockquote>
+<div><ul>
+<li><p><cite>By index</cite></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><cite>a_list[i]</cite>, <cite>i</cite> should be an integer and &lt; <cite>len(a_list)</cite>.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><cite>By slicing</cite></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><cite>a_list[:]</cite>, Return all elements in <cite>a_list</cite></p></li>
+<li><p><cite>a_list[i1:i2]</cite>, Return all elements in <cite>a_list</cite> from index i1 to <cite>i2</cite> excluding <cite>i2</cite>.</p></li>
+<li><p><cite>a_list[i1:i2:s]</cite>, Return all elements in <cite>a_list</cite> from index i1 to <cite>i2</cite> in step s excluding <cite>i2</cite>.</p></li>
+<li><p><cite>a_list[::-1]</cite>, Return all elements in <cite>a_list</cite> in reverse order.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<p><strong>Other functionalities:</strong></p>
+<blockquote>
+<div><ul>
+<li><p><cite>sort()</cite></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><cite>sort()</cite> Sort the existing list. Eg. <cite>a_list.sort()</cite>, ** <cite>sorted(list)</cite> Return a new list which is sorted. Eg. <cite>sorted(a_list)</cite>.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><cite>count(obj)</cite></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Return the number of occurrence of obj in <cite>a_list</cite></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><cite>index(obj)</cite></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Return the position of the first occurrence of obj in <cite>a_list</cite></p></li>
+</ul>
+</div></blockquote>
+</li>
 </ul>
 </div></blockquote>
 </div>

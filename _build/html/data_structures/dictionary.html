@@ -35,7 +35,7 @@
   <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Array" href="array.html" />
+    <link rel="next" title="Set" href="set.html" />
     <link rel="prev" title="Tuple" href="tuple.html" /> 
 </head>
 
@@ -87,12 +87,14 @@
 <li class="toctree-l3"><a class="reference internal" href="list.html">List</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tuple.html">Tuple</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Dictionary</a></li>
+<li class="toctree-l3"><a class="reference internal" href="set.html">Set</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="index.html#user-defined-data-structures">User defined data Structures</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../object_oriented_programming.html">Object Oriented Programming</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../object_oriented_programming/index.html">Object Oriented Programming</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../design_patterns/index.html">Design Patterns</a></li>
 </ul>
 
             
@@ -161,6 +163,131 @@
             
   <div class="section" id="dictionary">
 <h1>Dictionary<a class="headerlink" href="#dictionary" title="Permalink to this headline">¶</a></h1>
+<p><strong>Dictionary constructor:</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><cite>a_dict = {}</cite></p></li>
+<li><p><cite>a_dict =  dict()</cite></p></li>
+<li><p><cite>a_dict = {key : value for key, value in sequence}</cite></p></li>
+<li><p><cite>a_dict = dict.fromkeys(sequence)</cite></p></li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><p>Dictionary is a collection data type</p></li>
+<li><p>Dictionary store data as key-value pair</p></li>
+<li><p>Keys are distinct</p></li>
+<li><p>Indexed(keys are distinct and can be used as index)</p></li>
+<li><p>Dictionary can contain heterogeneous data type(different types of data eg. int, str, float, list, tuple, dict, queue, stack, tree…)</p></li>
+<li><p>Mutable</p></li>
+<li><p>Itarable(Default iterator is key)</p></li>
+</ul>
+<p><strong>Add an element:</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><cite>a_dict[key] = value</cite></p></li>
+</ul>
+</div></blockquote>
+<p><strong>Remove an element:</strong></p>
+<blockquote>
+<div><ul>
+<li><p><cite>clear()</cite></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Remove all the key-value pairs in a_dict.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><cite>pop(i)</cite></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Pop the given key and return the popped pair</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><cite>popitem()</cite></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Pop the last key-value pair and return the popped pair.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><cite>del</cite></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><cite>del a_dict[key]</cite>, Delete the key-value pair in a_dict</p></li>
+<li><p><cite>del a_dict</cite>, Delete a_dict</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<p><strong>Access the elements of dictionary:</strong></p>
+<blockquote>
+<div><ul>
+<li><p>By key</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>a_dict[key], key should be present in a_dict else raise an exception.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><cite>get(key[, default_value])</cite></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><cite>a_dict.get(key)</cite> returns the value associated with given key, if key is not present None</p></li>
+<li><p><cite>a_dict.get(key, default_value)</cite> returns the value associated with given key, if key is not present it return the default_value.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<p><strong>Other functionalities:</strong></p>
+<blockquote>
+<div><ul>
+<li><p><cite>copy()</cite></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Copy the dictionary to new dictionary</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><cite>keys()</cite></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns dict_keys([key1, key2, …])</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><cite>values()</cite></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns the dict_values([value1, value2, …])</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><cite>update()</cite></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Update the dictionary with given key-value pair.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><cite>items()</cite></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Returns dict_item((key1, value1), (key2, value2), …)</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><cite>setdefault(key[, value])</cite></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Return value of key in dictionary if key exists, else set value of key in it</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
 </div>
 
 
@@ -171,7 +298,7 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="array.html" class="btn btn-neutral float-right" title="Array" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="set.html" class="btn btn-neutral float-right" title="Set" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="tuple.html" class="btn btn-neutral float-left" title="Tuple" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
